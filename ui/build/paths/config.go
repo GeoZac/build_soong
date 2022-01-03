@@ -110,6 +110,10 @@ var Configuration = map[string]PathConfig{
 	"unzip":          Allowed,
 	"zip":            Allowed,
 
+	// AICP specific tools
+	"shuf":           Allowed,
+	"mogrify":        Allowed,
+
 	// Host toolchain is removed. In-tree toolchain should be used instead.
 	// GCC also can't find cc1 with this implementation.
 	"ar":         Forbidden,
